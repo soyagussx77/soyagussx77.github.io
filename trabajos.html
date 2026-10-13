@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis trabajos | Aguss</title>
+    <meta name="description" content="Aguss: desarrollo y configuración de servidores de Minecraft, bots de Discord y sistemas personalizados. Mira mis trabajos y mi trayectoria.">
+    <meta name="theme-color" content="#05080d">
+    <meta property="og:title" content="Mis trabajos | Aguss">
+    <meta property="og:description" content="Servidores de Minecraft, bots de Discord y sistemas personalizados.">
+    <meta property="og:image" content="Aguss.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">Aguss<span>.</span></a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="configuraciones.html">Configuraciones</a>
+            <a href="trabajos.html" class="active">Trabajos</a>
+            <a href="trayectoria.html">Trayectoria</a>
+            <a href="sobre-mi.html">Sobre mí</a>
+        </nav>
+        <a href="contacto.html" class="btn btn-primary nav-cta">Contacto</a>
+    </header>
+
+    <main>
+<section class="section page-top">
+            <div class="section-heading">
+                <p class="eyebrow">PORTAFOLIO</p>
+                <h2>Mis trabajos<span class="dot">.</span></h2>
+                <p>Diseños, builds y proyectos que he hecho.</p>
+            </div>
+
+            <div class="filters" id="filters" aria-label="Categorías"></div>
+
+            <div class="cat-banner" id="banner" hidden>
+                <h3></h3>
+                <p></p>
+            </div>
+
+            <label class="search-wrap">
+                <span aria-hidden="true">⌕</span>
+                <input type="search" id="search" placeholder="Buscar un proyecto" aria-label="Buscar un proyecto">
+            </label>
+
+            <div class="work-meta">
+                <p class="work-count" id="count"></p>
+                <select id="sort" class="sort-plain" aria-label="Ordenar">
+                    <option value="new">Más recientes primero</option>
+                    <option value="old">Más antiguos primero</option>
+                    <option value="az">A – Z</option>
+                </select>
+            </div>
+
+            <div class="works" id="works"></div>
+            <div class="more-wrap"><button class="btn btn-secondary" id="more" type="button">Ver más trabajos</button></div>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Aguss. Todos los derechos reservados.
+        </p>
+
+        <p>
+            Developer / Programador
+        </p>
+
+    </footer>
+
+<script src="trabajos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
